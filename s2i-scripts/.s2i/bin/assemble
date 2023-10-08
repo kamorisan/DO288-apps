@@ -38,4 +38,4 @@ else
 fi
 
 # Fix source directory permissions
-fix-permissions ./
+#fix-permissions ./
