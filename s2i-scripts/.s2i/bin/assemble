@@ -12,11 +12,12 @@ config_s2i
 
 cp -Rf /tmp/src/*.html ./
 
+DATE='date "+%Y-%m-%d"'
+echo "Build Date: $DATE" << ./info.html
 
 
 
-
-######## CUSTOMIZATION ENDS HERE ############
+####### CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
   echo "---> Copying httpd configuration files..."
