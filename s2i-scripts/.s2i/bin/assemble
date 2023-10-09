@@ -12,10 +12,12 @@ config_s2i
 
 cp -Rf /tmp/src/*.html ./
 
+echo "--- customize start  ---"
 DATE='date "+%Y-%m-%d"'
-echo "Build Date: $DATE" << ./info.html
 
+echo "Build Date: $DATE" < ./info.html
 
+echo "--- customize end ---"
 
 ####### CUSTOMIZATION ENDS HERE ############
 
